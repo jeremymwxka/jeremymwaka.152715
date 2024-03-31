@@ -1,0 +1,80 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bmw.logo.png');
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Image styles */
+img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Textbox styles */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 5px; /* Adjusted padding for smaller font size */
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

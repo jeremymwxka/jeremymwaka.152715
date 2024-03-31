@@ -12,16 +12,16 @@ if ($conn->connect_error) {
 }
 
 // Retrieve form data
-$username = $_POST["username"];
 $email = $_POST["email"];
 $password = $_POST["password"];
 
-// Insert user data into the database
-$sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+// Check user credentials
+$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    echo "Login successful!";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Invalid email or password";
 }
 
 // Close connection
