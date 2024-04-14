@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,54 +6,15 @@
     <title>Join the BMW Club</title>
     <nav>
         <ul>
-    <li> <a href="BMW-M5.html"> HOME</a></li>
-    <li><a href="Competition series.html">ADVANCED MODEL</a></li>
-     <li> <a href="M5 models.html">MODELS</a></li>
-     <li><a href="Ranking.html">RANKING</a> </li>
+            <li><a href="BMW-M5.html">HOME</a></li>
+            <li><a href="Competition series.html">ADVANCED MODEL</a></li>
+            <li><a href="M5 models.html">MODELS</a></li>
+            <li><a href="Ranking.html">RANKING</a></li>
         </ul>
-</nav>
-<link rel="stylesheet" href="styles.css">
+    </nav>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        form {
-            max-width: 400px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-        }
-        input[type="text"], input[type="password"], input[type="email"], button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        button {
-            background-color: #007bff;
-            color: #fff;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
+        /* Your CSS styles here */
     </style>
 </head>
 <body>
@@ -68,10 +28,10 @@
             <li>Access to special discounts and offers from BMW partners.</li>
         </ul>
         <h2>Sign Up</h2>
-        <form id="signupForm" form action="processes">
-            <input type="text" placeholder="Username" required><br>
-            <input type="email" placeholder="Email" required><br>
-            <input type="password" placeholder="Password" required><br>
+        <form action="insert.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
             <button type="submit">Sign Up</button>
         </form>
         <h2>Login</h2>
@@ -83,4 +43,3 @@
     </div>
 </body>
 </html>
-```
